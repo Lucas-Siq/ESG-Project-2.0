@@ -1,0 +1,325 @@
+
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_marginBottom="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_acessibilidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Barra de Acessibilidade"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_acessibilidade"
+            android:text="Voltar"
+            android:background="#00FFFFFF"
+            android:drawableStart="@drawable/ic_arrow_back"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/titulo_empresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_acessibilidade"
+            android:text="Empresa S.A."
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/green_esg"/>
+
+        <TextView
+            android:id="@+id/cadastrar_colaborador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar Colaborador"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_voltar"
+            />
+
+        <TextView
+            android:id="@+id/photo_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/ic_perfil_photo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cadastrar_colaborador"
+            />
+
+        <TextView
+            android:id="@+id/txt_alterarimagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alterar Imagem"
+            android:textSize="16dp"
+            android:textColor="@color/green_esg"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/photo_profile"/>
+
+        <TextView
+            android:id="@+id/txt_cpf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CPF"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/photo_profile"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+
+        <EditText
+            android:id="@+id/edt_cpf"
+            android:hint=" 568.965.874-55"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cpf"
+            app:layout_constraintStart_toStartOf="@id/edt_cpf"
+            style="@style/container_form"
+            android:background="@drawable/container_form"
+            android:textColorHint="@color/Gray"/>
+
+        <TextView
+            android:id="@+id/txt_nome_completo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome completo"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_cpf"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/edt_nome_completo"
+            android:hint=" Fulana da Silva"
+            app:layout_constraintTop_toBottomOf="@+id/txt_nome_completo"
+            app:layout_constraintStart_toStartOf="@id/txt_nome_completo"
+            style="@style/container_form"
+            android:background="@drawable/container_form"
+            android:textColorHint="@color/Gray"/>
+
+        <TextView
+            android:id="@+id/txt_cargo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cargo"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_nome_completo"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="20dp"
+            />
+
+
+        <EditText
+            android:id="@+id/edt_cargo"
+            android:hint=" Auxiliar Administrativo"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cargo"
+            app:layout_constraintStart_toStartOf="@id/txt_cargo"
+            style="@style/container_form"
+            android:background="@drawable/container_form"
+            android:textColorHint="@color/Gray"/>
+
+        <TextView
+            android:id="@+id/txt_cep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CEP"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_cargo"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/edt_cep"
+            android:hint=" 05881-005"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cep"
+            app:layout_constraintStart_toStartOf="@id/txt_cep"
+            style="@style/container_form"
+            android:background="@drawable/container_form60"
+            android:textColorHint="@color/Gray"
+            android:layout_marginEnd="200dp"
+            android:layout_marginStart="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button7"
+            style="@style/Button7"
+            app:layout_constraintEnd_toEndOf="@+id/edt_cargo"
+            app:layout_constraintTop_toTopOf="@+id/edt_cep"
+            app:layout_constraintBottom_toBottomOf="@+id/edt_cep"
+            android:text="Buscar CEP"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button7"
+            />
+
+        <TextView
+            android:id="@+id/txt_rua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rua"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_cep"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/edt_rua"
+            android:hint=" Ex: Av. Augusto Oscar"
+            app:layout_constraintTop_toBottomOf="@+id/txt_rua"
+            app:layout_constraintStart_toStartOf="@id/txt_rua"
+            style="@style/container_form"
+            android:background="@drawable/container_form"
+            android:textColorHint="@color/Gray"/>
+
+        <TextView
+            android:id="@+id/txt_bairro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bairro"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_rua"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/edt_bairro"
+            android:hint=" Ex: Jardim Paulista"
+            app:layout_constraintTop_toBottomOf="@+id/txt_bairro"
+            app:layout_constraintStart_toStartOf="@id/txt_bairro"
+            style="@style/container_form"
+            android:background="@drawable/container_form60"
+            android:textColorHint="@color/Gray"
+            android:layout_marginEnd="200dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/txt_numerocasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nº"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/txt_bairro"
+            app:layout_constraintTop_toTopOf="@id/txt_bairro"
+            android:layout_marginLeft="160dp"
+            />
+
+        <EditText
+            android:id="@+id/edt_numerocasa"
+            android:hint=" Ex: 6586"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/txt_numerocasa"
+            app:layout_constraintStart_toStartOf="@id/txt_numerocasa"
+            style="@style/container_form"
+            android:background="@drawable/container_form60"
+            android:textColorHint="@color/Gray"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="220dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_cidade1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cidade"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_bairro"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/edt_cidade"
+            android:hint=" Ex: São Paulo"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cidade1"
+            app:layout_constraintStart_toStartOf="@id/txt_cidade1"
+            style="@style/container_form"
+            android:background="@drawable/container_form60"
+            android:textColorHint="@color/Gray"
+            android:layout_marginEnd="200dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/txt_uf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UF"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/txt_cidade1"
+            app:layout_constraintTop_toTopOf="@id/txt_cidade1"
+            android:layout_marginLeft="160dp"/>
+
+        <EditText
+            android:id="@+id/edt_uf"
+            android:hint=" Ex: SP"
+            app:layout_constraintTop_toBottomOf="@+id/txt_uf"
+            app:layout_constraintStart_toStartOf="@id/txt_uf"
+            style="@style/container_form"
+            android:background="@drawable/container_form60"
+            android:textColorHint="@color/Gray"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="220dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_salvaralteracoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button8"
+            app:layout_constraintTop_toBottomOf="@+id/edt_cidade"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Salvar Alterações"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".perfil">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_acessibilidade3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Barra de Acessibilidade"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_voltar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_acessibilidade3"
+        android:text="Voltar"
+        android:background="#00FFFFFF"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_arrow_back"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/txt_empresa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empresa S.A."
+        android:textSize="16sp"
+        android:textColor="@color/green_esg"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/button_acessibilidade3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="16dp"/>
+
+    <ImageView
+        android:id="@+id/elipso_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/elipsebase"
+        app:layout_constraintTop_toBottomOf="@id/button_voltar3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/elipso_base2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/ellipse"
+        app:layout_constraintTop_toBottomOf="@+id/button_voltar3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="31dp"/>
+
+    <TextView
+        android:id="@+id/name_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fulana da Silva"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/elipso_base"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:id="@+id/funcao_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auxiliar Administrativo"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/name_perfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/localidade_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="São Paulo, SP"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/funcao_perfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"
+        android:textSize="12dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"/>
+
+    <View
+        android:id="@+id/container_dados_premio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button10"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/localidade_perfil"/>
+
+    <TextView
+        android:id="@+id/txt_posicaocontainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  186º Lugar"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/vector"
+        app:layout_constraintTop_toTopOf="@+id/container_dados_premio"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="14dp"/>
+
+    <TextView
+        android:id="@+id/txt_posicaocontainer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  360 pontos"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/subtract"
+        app:layout_constraintTop_toTopOf="@+id/container_dados_premio"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="14dp"/>
+
+
+    <TextView
+        android:id="@+id/txt_proximasconquistas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Próximas Conquistas"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/container_dados_premio"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"/>
+
+    <View
+        android:id="@+id/container_dados_premio3"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/button12"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_proximasconquistas"/>
+
+
+    <View
+        android:id="@+id/container_dados_premio2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/button11"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_proximasconquistas"/>
+
+    <TextView
+        android:id="@+id/txt_posicaocontainer3"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Faltam 67% para você adquirir a recompensa: “Dia de folga”"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="@+id/container_dados_premio3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/txt_pontos3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meus Pontos"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/container_dados_premio2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/txt_posicao3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="186º Lugar"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@+id/txt_pontos3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <TextView
+        android:id="@+id/txt_caminhada3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caminhada"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pontos3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/txt_porcentagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="42%"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@+id/txt_caminhada3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:id="@+id/txt_voluntariado3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voluntariado"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/barra_base3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/txt_porcentagem3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23%"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@+id/txt_voluntariado3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="6dp"/>
+
+    <View
+        android:id="@+id/barra_base3"
+        style="@style/barra_base"
+        app:layout_constraintTop_toBottomOf="@id/txt_caminhada3"
+        app:layout_constraintStart_toStartOf="@id/txt_caminhada3"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <View
+        android:id="@+id/barra_principal"
+        style="@style/barra_principal"
+        app:layout_constraintTop_toBottomOf="@id/txt_caminhada3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginTop="8dp"/>
+
+    <View
+        android:id="@+id/barra_base4"
+        style="@style/barra_base"
+        app:layout_constraintTop_toBottomOf="@id/txt_voluntariado3"
+        app:layout_constraintStart_toStartOf="@id/txt_voluntariado3"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <View
+        android:id="@+id/barra_principal4"
+        style="@style/barra_principal"
+        app:layout_constraintTop_toBottomOf="@id/txt_voluntariado3"
+        app:layout_constraintStart_toStartOf="@id/txt_voluntariado3"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="350dp"
+        android:layout_marginTop="8dp"/>
+
+
+    <View
+        android:id="@+id/espacamento"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/barra_principal4"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ESG</string>
+    <string name="Title_loja_1">Horta-Viva Loja 1</string>
+    <string name="produtor_loja_1">Produtor: Rubez Roberto</string>
+    <string name="endereco_loja_1">Alameda Maruás, 71 - Planalto Paulista, São Paulo - SP, 04068-110</string>
+    <string name="localizador_loja_1">Onde fica?</string>
+    <string name="title_loja_2">Horta-Viva Loja 2</string>
+    <string name="produtor_loja_2">Produtor: Cassia Alvarez</string>
+    <string name="endereco_loja_2">Av. Dr. Enéas Carvalho de Aguiar, 250a - Cerqueira César, São Paulo - SP, 05403-000</string>
+    <string name="localizador_loja_2">Onde fica?</string>
+    <string name="title_loja_3">Horta-Viva Loja 3</string>
+    <string name="produtor_loja_3">Produtor: Alex Silva</string>
+    <string name="endereco_loja_3">Av. Alcântara Machado, 2200 - Parque da Mooca, São Paulo - SP, 03101-005</string>
+    <string name="localizador_loja_3">Onde fica?</string>
+</resources>

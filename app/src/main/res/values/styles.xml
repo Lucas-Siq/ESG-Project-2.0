@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ContainerComponents">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:background">@drawable/container_components</item>
+    </style>
+
+    <style name="Container_acessibilidade">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/container_acessibilidade</item>
+    </style>
+    
+    <style name="Button">
+        <item name="android:layout_width">170dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <style name="Button2">
+        <item name="android:layout_width">170dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="container_form">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="Button_ranking">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="barra_base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:background">@drawable/barra1</item>
+
+    </style>
+
+    <style name="barra_principal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:background">@drawable/barra2</item>
+    </style>
+
+    <style name="barra_principal_agua">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:background">@drawable/barra2agua</item>
+    </style>
+
+    <style name="Button_acessibilidade">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@drawable/divider</item>
+    </style>
+
+    <style name="divider2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@drawable/divider2</item>
+    </style>
+
+    <style name="divider3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@drawable/divider3</item>
+    </style>
+
+    <style name="Button6">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="container_form60">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="Button7">
+        <item name="android:layout_width">170dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+</resources>
