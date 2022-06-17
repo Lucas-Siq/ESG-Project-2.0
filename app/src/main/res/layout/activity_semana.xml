@@ -166,43 +166,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"/>
 
-    <TextView
-        android:id="@+id/txt_cep2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CEP"
-        android:textSize="16dp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txt_veja_hortas"
-        android:layout_marginTop="24dp"
-        android:layout_marginLeft="20dp"
-        />
-
-    <EditText
-        android:id="@+id/edt_cep2"
-        android:hint=" 05881-005"
-        android:inputType="number"
-        app:layout_constraintTop_toBottomOf="@+id/txt_cep2"
-        app:layout_constraintStart_toStartOf="@id/txt_cep2"
-        style="@style/container_form"
-        android:background="@drawable/container_form60"
-        android:textColorHint="@color/Gray"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="200dp"
-        android:layout_marginStart="20dp"/>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button8"
-        style="@style/Button7"
-        app:layout_constraintEnd_toEndOf="@+id/banner_horta"
-        app:layout_constraintTop_toTopOf="@+id/edt_cep2"
-        app:layout_constraintBottom_toBottomOf="@+id/edt_cep2"
-        android:text="Buscar CEP"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:background="@drawable/button9"
-        />
 
     <fragment
         class="com.google.android.gms.maps.SupportMapFragment"
@@ -210,7 +173,7 @@
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/edt_cep2"
+        app:layout_constraintTop_toBottomOf="@id/txt_veja_hortas"
         app:layout_constraintStart_toStartOf="parent"/>
 
 
